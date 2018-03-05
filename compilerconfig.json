@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "css/alt-style.css",
+    "inputFile": "css/alt-style.scss"
+  },
+  {
+    "outputFile": "css/main-style.css",
+    "inputFile": "css/main-style.scss"
+  }
+]

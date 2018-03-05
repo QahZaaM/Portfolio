@@ -1,0 +1,82 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>MaazPortfolioPHP</Name>
+    <ProjectGuid>99bd60a5-d1e4-43ba-a505-11ce093bc733</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>MaazPortfolioPHP</AssemblyName>
+    <Runtime>PHP</Runtime>
+    <RuntimeVersion>7.1</RuntimeVersion>
+    <EnvName>PHPDev</EnvName>
+    <PHPDevHostName>localhost</PHPDevHostName>
+    <PHPDevAutoPort>true</PHPDevAutoPort>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="css\" />
+    <Folder Include="images\" />
+    <Folder Include="js\" />
+    <Folder Include="content\" />
+    <Folder Include="php\" />
+    <Folder Include="pages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+    <Content Include="compilerconfig.json.defaults">
+      <SubType>Content</SubType>
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </Content>
+    <Content Include="content\APiratesDuel.zip" />
+    <Content Include="content\The Lost Box - An Unreal 4 Production.mp4" />
+    <Content Include="css\alt-style.css">
+      <SubType>Content</SubType>
+      <DependentUpon>css\alt-style.scss</DependentUpon>
+    </Content>
+    <Content Include="css\alt-style.min.css">
+      <SubType>Content</SubType>
+      <DependentUpon>css\alt-style.css</DependentUpon>
+    </Content>
+    <Content Include="css\alt-style.scss" />
+    <Content Include="css\bootstrap-social.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\fontawesome.min.css" />
+    <Content Include="css\main-style.css">
+      <SubType>Content</SubType>
+      <DependentUpon>css\main-style.scss</DependentUpon>
+    </Content>
+    <Content Include="css\main-style.min.css">
+      <SubType>Content</SubType>
+      <DependentUpon>css\main-style.css</DependentUpon>
+    </Content>
+    <Content Include="css\main-style.scss" />
+    <Content Include="images\a-pirates-duel.png" />
+    <Content Include="images\bootstrap-social.png" />
+    <Content Include="images\header.jpg" />
+    <Content Include="images\maaz.jpg" />
+    <Content Include="images\male_mage.jpg" />
+    <Content Include="images\pixel.png" />
+    <Content Include="images\test.jpg" />
+    <Content Include="images\the-lost-box.png" />
+    <Content Include="images\the-spot.png" />
+    <Content Include="index.html" />
+    <Content Include="js\alt-page.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\fontawesome.min.js" />
+    <Content Include="js\jQuery-3.1.1.js" />
+    <Content Include="js\main.js" />
+    <Content Include="pages\apiratesduel.html" />
+    <Content Include="pages\magiator.html" />
+    <Content Include="pages\thelostbox.html" />
+    <Content Include="pages\thespot.html" />
+  </ItemGroup>
+</Project>
